@@ -1,3 +1,5 @@
-- [x] Edit App.vue to import traductor.vue instead of HelloWorld.vue
-- [x] Replace HelloWorld component usage with traductor in the template
-- [x] Edit main.js to import and mount traductor.vue directly instead of App.vue
+- [x] Update traductor.vue template with input textarea, translate button, and output display
+- [x] Add reactive data (inputText, translatedText) and translation method in script setup
+- [x] Implement hardcoded translations for common complaints (e.g., wifi lento, comida fría)
+- [x] Add basic styles for the translator UI
+- [x] Test the application by running npm run dev and verifying translation functionality
