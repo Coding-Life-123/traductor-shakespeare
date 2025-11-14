@@ -6,9 +6,7 @@ const translatedText = ref("");
 
 const translateComplaint = () => {
   const lowerInput = inputText.value.toLowerCase().trim();
-  translatedText.value =
-    translations[lowerInput] ||
-    "¡Oh noble alma! Tu queja no está en mi repertorio, pero habla con elocuencia shakespeariana.";
+  translatedText.value = translations[lowerInput]
 };
 </script>
 
