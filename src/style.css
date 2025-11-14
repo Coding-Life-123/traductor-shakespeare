@@ -1,22 +1,22 @@
 :root {
-  --bg-main: #121015;            /* fondo teatral dark */
-  --bg-panel: #1A171D;           /* paneles sutilmente levantados */
-  --text-primary: #F8F5F0;       /* texto claro pergamino */
-  --text-secondary: #C9A46A;     /* dorado cálido */
+  --bg-main: #121015; /* fondo teatral dark */
+  --bg-panel: #1a171d; /* paneles sutilmente levantados */
+  --text-primary: #f8f5f0; /* texto claro pergamino */
+  --text-secondary: #c9a46a; /* dorado cálido */
 
   /* Burbujas */
-  --bubble-user: #2D3A73;        /* azul índigo elegante */
-  --bubble-ai: #4B1D5A;          /* morado teatral */
-  --bubble-outline: #6A5C4A;     /* marrón antiguo minimal */
+  --bubble-user: #2d3a73; /* azul índigo elegante */
+  --bubble-ai: #4b1d5a; /* morado teatral */
+  --bubble-outline: #6a5c4a; /* marrón antiguo minimal */
 
   /* Degradados */
   --primary-gradient: #2c1810;
   --secondary-gradient: #4a2c1a;
 
   /* Acentos */
-  --accent-gold: #E2C572;
-  --accent-burgundy: #7D1E3D;
-  --accent-purple: #8856A3;
+  --accent-gold: #e2c572;
+  --accent-burgundy: #7d1e3d;
+  --accent-purple: #8856a3;
 
   /* Sombras */
   --shadow-soft: 0 4px 10px #00000044;
@@ -25,4 +25,16 @@
   /* Bordes */
   --border-radius: 14px;
   --border-radius-small: 8px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  overflow-x: hidden;
 }

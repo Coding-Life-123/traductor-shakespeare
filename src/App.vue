@@ -1,11 +1,16 @@
 <script setup>
-import Traductor from "./components/Traductor.vue";
+import { RouterView } from "vue-router";
 </script>
 
 <template>
-  <Traductor />
+  <div id="app-container">
+    <RouterView />
+  </div>
 </template>
 
 <style scoped>
-
+#app-container {
+  min-height: 100vh;
+  width: 100%;
+}
 </style>

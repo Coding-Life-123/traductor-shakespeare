@@ -1,5 +1,8 @@
 import { createApp } from "vue";
 import "./style.css";
-import traductor from "./components/traductor.vue";
+import App from "./App.vue";
+import router from "./router.js";
 
-createApp(traductor).mount("#app");
+const app = createApp(App);
+app.use(router);
+app.mount("#app");

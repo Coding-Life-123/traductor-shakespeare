@@ -1,5 +1,11 @@
-- [x] Update traductor.vue template with input textarea, translate button, and output display
-- [x] Add reactive data (inputText, translatedText) and translation method in script setup
-- [x] Implement hardcoded translations for common complaints (e.g., wifi lento, comida fría)
-- [x] Add basic styles for the translator UI
-- [x] Test the application by running npm run dev and verifying translation functionality
+# TODO: Traductor de Quejas a Idioma Shakespeariano
+
+## Tareas Pendientes
+
+- [x] Crear página de bienvenida en Bienvenida.vue
+  - [x] Agregar título principal
+  - [x] Agregar descripción introductoria
+  - [x] Agregar botón para navegar al traductor
+  - [x] Aplicar estilos shakespearianos consistentes
+- [x] Ejecutar la app para verificar funcionamiento
+- [x] Ajustes finales si es necesario (bordes blancos eliminados)
