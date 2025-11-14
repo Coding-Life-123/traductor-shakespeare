@@ -1,16 +1,9 @@
 :root {
-<<<<<<< HEAD
-  --bg-main: #121015;            /* fondo teatral dark */
-  --bg-panel: #1A171D;      
-  --bg-color1: #f4e4bc;     /* paneles sutilmente levantados */
-  --text-primary: #F8F5F0;       /* texto claro pergamino */
-  --text-secondary: #C9A46A;     /* dorado cálido */
-=======
   --bg-main: #121015; /* fondo teatral dark */
-  --bg-panel: #1a171d; /* paneles sutilmente levantados */
+  --bg-panel: #1a171d;
+  --bg-color1: #f4e4bc; /* paneles sutilmente levantados */
   --text-primary: #f8f5f0; /* texto claro pergamino */
   --text-secondary: #c9a46a; /* dorado cálido */
->>>>>>> ae67c46402622b306477e5432e6def5b42d2b6eb
 
   /* Burbujas */
   --bubble-user: #2d3a73; /* azul índigo elegante */
@@ -19,7 +12,7 @@
 
   /* Degradados */
   --primary-gradient: #2c1810;
-  --secon dary-gradient: #4a2c1a;
+  --secondary-gradient: #4a2c1a;
 
   /* Acentos */
   --accent-gold: #e2c572;
@@ -48,5 +41,6 @@ html,
 body {
   height: 100%;
   overflow-x: hidden;
-  margin: 0; padding: 0;
+  margin: 0;
+  padding: 0;
 }
