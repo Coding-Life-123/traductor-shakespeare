@@ -1,0 +1,3 @@
+- [x] Edit App.vue to import traductor.vue instead of HelloWorld.vue
+- [x] Replace HelloWorld component usage with traductor in the template
+- [x] Edit main.js to import and mount traductor.vue directly instead of App.vue
