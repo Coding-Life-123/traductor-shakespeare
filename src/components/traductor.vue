@@ -1,13 +1,8 @@
 <script setup>
 import { ref } from "vue";
+import TextInput from './TextInput.vue'
 
-const inputText = ref("");
 const translatedText = ref("");
-
-const translateComplaint = () => {
-  const lowerInput = inputText.value.toLowerCase().trim();
-  translatedText.value = translations[lowerInput]
-};
 </script>
 
 <template>
@@ -16,21 +11,12 @@ const translateComplaint = () => {
     <p>Convierte quejas modernas a lenguaje dramático clásico</p>
 
     <div class="input-section">
-      <label for="complaint-input">Ingresa tu queja moderna:</label>
-      <textarea
-        id="complaint-input"
-        v-model="inputText"
-        placeholder="Ej: El wifi está lento"
-        rows="3"
-      ></textarea>
-      <button @click="translateComplaint" class="translate-btn">
-        Traducir a Shakespeariano
-      </button>
+      <TextInput />
     </div>    
 
     <div class="output-section" v-if="translatedText">
       <h2>Queja Shakespeariana:</h2>
-      <p class="translated">{{ translatedText }}</p>
+      <p class="translated">{{ translatedText }}</p>>
     </div>
   </div>
 </template>
@@ -43,6 +29,7 @@ const translateComplaint = () => {
   font-family: "Georgia", "Times New Roman", serif;
   background: linear-gradient(135deg, var(--primary-gradient) 0%, var(--secondary-gradient) 50%, var(--primary-gradient) 100%);
   color: var(--text-primary);
+  text-shadow: 0 0 15px var(--accent-gold);
   border-radius: 15px;
   box-shadow: 0 10px 30px var(--shadow-soft);
   border: 3px solid var(--bubble-outline);
@@ -51,8 +38,8 @@ const translateComplaint = () => {
 h1 {
   text-align: center;
   color: var(--text-primary);
+  text-shadow: 0 0 15px var(--accent-gold);
   font-size: 2.5em;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
   margin-bottom: 10px;
   font-family: "Cinzel", serif;
 }
@@ -60,7 +47,8 @@ h1 {
 .translator > p {
   text-align: center;
   font-style: italic;
-  color: #deb887;
+  color: var(--text-secondary);
+  text-shadow: 0 0 15px var(--accent-burgundy);
   margin-bottom: 30px;
 }
 
@@ -69,54 +57,6 @@ h1 {
   display: flex;
   flex-direction: column;
   padding: 10px;
-}
-
-label {
-  display: block;
-  margin-bottom: 15px;
-  font-weight: bold;
-  color: #ffd700;
-  font-size: 1.2em;
-}
-
-textarea {
-  padding: 15px;
-  border: 2px solid #8b4513;
-  border-radius: 10px;
-  font-size: 16px;
-  resize: vertical;
-  background-color: #f4e4bc;
-  color: #2c1810;
-  font-family: "Georgia", serif;
-  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-textarea::placeholder {
-  color: #8b4513;
-  opacity: 0.7;
-}
-
-.translate-btn {
-  margin-top: 20px;
-  width: 100%;
-  padding: 15px;
-  background: linear-gradient(45deg, #8b4513, #a0522d);
-  color: #f4e4bc;
-  border: 2px solid #ffd700;
-  border-radius: 10px;
-  font-size: 20px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-.translate-btn:hover {
-  background: linear-gradient(45deg, #a0522d, #8b4513);
-  transform: translateY(-2px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
 }
 
 .output-section {

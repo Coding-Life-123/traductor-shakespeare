@@ -1,6 +1,7 @@
 :root {
   --bg-main: #121015;            /* fondo teatral dark */
-  --bg-panel: #1A171D;           /* paneles sutilmente levantados */
+  --bg-panel: #1A171D;      
+  --bg-color1: #f4e4bc;     /* paneles sutilmente levantados */
   --text-primary: #F8F5F0;       /* texto claro pergamino */
   --text-secondary: #C9A46A;     /* dorado cálido */
 
@@ -11,7 +12,7 @@
 
   /* Degradados */
   --primary-gradient: #2c1810;
-  --secondary-gradient: #4a2c1a;
+  --secon dary-gradient: #4a2c1a;
 
   /* Acentos */
   --accent-gold: #E2C572;
@@ -23,6 +24,9 @@
   --shadow-strong: 0 6px 20px #00000066;
 
   /* Bordes */
+
+  --border-color1: #8b4513;
+  --border-color2: ;
   --border-radius: 14px;
   --border-radius-small: 8px;
 }
