@@ -23,11 +23,10 @@ const translateComplaint = () => {
         placeholder="Ej: El wifi está lento"
         rows="3"
       ></textarea>
-    </div>
-
-    <button @click="translateComplaint" class="translate-btn">
-      Traducir a Shakespeariano
-    </button>
+      <button @click="translateComplaint" class="translate-btn">
+        Traducir a Shakespeariano
+      </button>
+    </div>    
 
     <div class="output-section" v-if="translatedText">
       <h2>Queja Shakespeariana:</h2>
@@ -67,6 +66,9 @@ h1 {
 
 .input-section {
   margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
 }
 
 label {
@@ -78,7 +80,6 @@ label {
 }
 
 textarea {
-  width: 100%;
   padding: 15px;
   border: 2px solid #8b4513;
   border-radius: 10px;
@@ -96,7 +97,7 @@ textarea::placeholder {
 }
 
 .translate-btn {
-  display: block;
+  margin-top: 20px;
   width: 100%;
   padding: 15px;
   background: linear-gradient(45deg, #8b4513, #a0522d);
