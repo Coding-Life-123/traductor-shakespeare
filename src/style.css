@@ -9,6 +9,10 @@
   --bubble-ai: #4B1D5A;          /* morado teatral */
   --bubble-outline: #6A5C4A;     /* marrón antiguo minimal */
 
+  /* Degradados */
+  --primary-gradient: #2c1810;
+  --secondary-gradient: #4a2c1a;
+
   /* Acentos */
   --accent-gold: #E2C572;
   --accent-burgundy: #7D1E3D;

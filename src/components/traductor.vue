@@ -41,16 +41,16 @@ const translateComplaint = () => {
   margin: 20px auto;
   padding: 30px;
   font-family: "Georgia", "Times New Roman", serif;
-  background: linear-gradient(135deg, #2c1810 0%, #4a2c1a 50%, #2c1810 100%);
-  color: #f4e4bc;
+  background: linear-gradient(135deg, var(--primary-gradient) 0%, var(--secondary-gradient) 50%, var(--primary-gradient) 100%);
+  color: var(--text-primary);
   border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-  border: 3px solid #8b4513;
+  box-shadow: 0 10px 30px var(--shadow-soft);
+  border: 3px solid var(--bubble-outline);
 }
 
 h1 {
   text-align: center;
-  color: #ffd700;
+  color: var(--text-primary);
   font-size: 2.5em;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
   margin-bottom: 10px;
