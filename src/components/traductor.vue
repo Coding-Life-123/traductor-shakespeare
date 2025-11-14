@@ -4,29 +4,6 @@ import { ref } from "vue";
 const inputText = ref("");
 const translatedText = ref("");
 
-const translations = {
-  "el wifi está lento":
-    "¡Oh cruel destino! ¿Por qué las señales etéreas me abandonan en mi hora de necesidad?",
-  "la comida está fría":
-    "¡Ay de mí! Este manjar, otrora cálido, ahora yace frío como el corazón de un villano.",
-  "el servicio es malo":
-    "¡Oh infortunio! Este servicio, indigno de príncipes, me aflige con su torpeza.",
-  "el precio es alto":
-    "¡Por Júpiter! Este precio exorbitante hiere mi bolsa como espada enemiga.",
-  "el teléfono no funciona":
-    "¡Maldición! Este artefacto infernal, que debía conectar almas, me deja en silencio eterno.",
-  "el coche no arranca":
-    "¡Oh desgracia! Mi fiel corcel mecánico, que debía llevarme a aventuras, yace inerte.",
-  "la luz no funciona":
-    "¡Ay! Las sombras me envuelven, pues la luz, mi guía, ha abandonado su puesto.",
-  "el internet es lento":
-    "¡Oh tormento! Las ondas invisibles, que unen mundos, se arrastran con pereza infinita.",
-  "la batería se agota":
-    "¡Tragedia! Mi fuente de vida eléctrica se desvanece, dejando solo oscuridad.",
-  "el aire acondicionado no funciona":
-    "¡Calor infernal! Este aparato, que debía refrescar mi alma, falla en su deber.",
-};
-
 const translateComplaint = () => {
   const lowerInput = inputText.value.toLowerCase().trim();
   translatedText.value =
