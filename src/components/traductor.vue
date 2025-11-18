@@ -2,6 +2,10 @@
 import { ref } from "vue";
 import TextInput from './TextInput.vue'
 
+function getInput(){
+  
+}
+
 const translatedText = ref("");
 </script>
 
@@ -11,7 +15,7 @@ const translatedText = ref("");
     <p>Convierte quejas modernas a lenguaje dramático clásico</p>
 
     <div class="input-section">
-      <TextInput />
+      <TextInput @submitText="getInput"/>
     </div>    
 
     <div class="output-section" v-if="translatedText">
